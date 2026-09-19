@@ -1,0 +1,323 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head></head><body class="flex justify-center items-center min-h-screen p-0 sm:p-4 text-white selection:bg-pink-500 selection:text-white"><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>BoldSounds - Play, Focus, Achieve</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              bg: '#0c0d11',
+              card: '#15171e',
+              pink: '#f2a7b8',
+              pinkHover: '#ea91a5',
+              subtext: '#9ba1b0',
+              muted: '#626877',
+              border: '#1e212b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    /* Dispositivo móvil centrado y estética iOS */
+    body {
+      background-color: #050608;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Scrollbar invisible para look nativo */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    * {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style data-purpose="glow-effects">
+    /* Efecto de resplandor sutil para los auriculares y acentos de luz */
+    .hero-glow {
+      background: radial-gradient(circle at 65% 35%, rgba(242, 167, 184, 0.18) 0%, rgba(138, 58, 86, 0.08) 45%, transparent 70%);
+    }
+  </style>
+
+
+
+
+<!-- END: iOSStatusBar -->
+<!-- BEGIN: MainContentScrollableArea -->
+<main class="flex-1 overflow-y-auto px-5 pt-2 pb-24 relative" data-purpose="scrollable-content">
+<!-- BEGIN: AppHeader -->
+<nav class="flex justify-between items-center py-2 mb-2" data-purpose="app-navbar">
+<!-- Logo e isotipo -->
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-gradient-to-tr from-[#9c4d67] via-[#c9748b] to-[#f4a5b8] flex items-center justify-center shadow-[0_0_15px_rgba(242,167,184,0.3)]">
+<svg class="w-5 h-5 text-brand-bg fill-current" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="3"></circle>
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 2.227.728 4.286 1.957 5.952l1.436-1.436A7.962 7.962 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8a7.962 7.962 0 01-1.393 4.516l1.436 1.436A9.96 9.96 0 0022 12c0-5.523-4.477-10-10-10zm-5.657 5.657A5.98 5.98 0 005 12c0 1.506.555 2.883 1.472 3.943l1.425-1.425A3.987 3.987 0 017 12c0-2.761 2.239-5 5-5s5 2.239 5 5c0 .99-.288 1.913-.787 2.69l1.425 1.425A5.98 5.98 0 0019 12a6.993 6.993 0 00-2.05-4.95A6.993 6.993 0 0012 5a6.993 6.993 0 00-5.657 2.657z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-white">BoldSounds</span>
+</div>
+<!-- Acciones de cabecera -->
+<div class="flex items-center gap-4">
+<button aria-label="Buscar" class="text-white/80 hover:text-white transition-colors">
+<svg class="w-5 h-5 stroke-[2] stroke-current fill-none" viewBox="0 0 24 24">
+<circle cx="11" cy="11" r="7"></circle>
+<path d="M21 21l-4.35-4.35" stroke-linecap="round"></path>
+</svg>
+</button>
+<button aria-label="Perfil" class="text-white/80 hover:text-white transition-colors">
+<svg class="w-5 h-5 stroke-[2] stroke-current fill-none" viewBox="0 0 24 24">
+<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-linecap="round"></path>
+<circle cx="12" cy="7" r="4" stroke-linecap="round"></circle>
+</svg>
+</button>
+</div>
+</nav>
+<!-- END: AppHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-6 pb-4 hero-glow min-h-[260px] flex items-center" data-purpose="hero-highlight">
+<!-- Contenido textual a la izquierda -->
+<div class="z-10 pr-2 w-[72%]">
+<p class="text-[10.5px] tracking-[0.22em] font-semibold text-brand-pink/90 uppercase mb-2">
+            De lovebrand para bold</p>
+<h1 class="text-[34px] leading-[1.08] font-extrabold tracking-tight text-white mb-2.5">Para el equipo<br class=""><span class="text-brand-pink block">BOLD.</span></h1>
+<p class="text-[13px] leading-relaxed text-brand-subtext mb-5 font-normal">Un regalo sonoro exclusivo de LoveBrand</p>
+<!-- Botón de acción principal Reproducir -->
+<button class="inline-flex items-center gap-2 bg-brand-pink hover:bg-brand-pinkHover active:scale-95 transition-all duration-200 text-[#14151a] font-semibold px-5 py-2.5 rounded-full text-[13px] shadow-[0_4px_16px_rgba(242,167,184,0.3)]">
+<svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+<span class="">Reproducir</span>
+</button>
+</div>
+<!-- Gráfico del auricular a la derecha (Composición SVG minimalista con halo) -->
+<div class="absolute -right-7 top-1/2 -translate-y-1/2 w-52 h-52 pointer-events-none z-0">
+<div class="w-full h-full relative flex items-center justify-center">
+<!-- Halo de luz cálida rosada -->
+<div class="absolute w-44 h-44 rounded-full bg-brand-pink/15 blur-2xl"></div>
+<!-- Silueta estilizada de audífonos de alta gama similar al original -->
+<svg class="w-48 h-48 drop-shadow-[-8px_12px_24px_rgba(0,0,0,0.8)]" fill="none" viewBox="0 0 200 200">
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="bandGrad" x1="50" x2="160" y1="20" y2="150">
+<stop stop-color="#3d404d"></stop>
+<stop offset="0.4" stop-color="#1e1f26"></stop>
+<stop offset="1" stop-color="#0e0f14"></stop>
+</linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" id="cupGlow" x1="100" x2="170" y1="60" y2="170">
+<stop stop-color="#555866"></stop>
+<stop offset="0.5" stop-color="#23242c"></stop>
+<stop offset="1" stop-color="#121318"></stop>
+</linearGradient>
+<radialGradient cx="60%" cy="40%" id="ringLight" r="60%">
+<stop stop-color="#f2a7b8" stop-opacity="0.35"></stop>
+<stop offset="60%" stop-color="#1e1f27" stop-opacity="0"></stop>
+</radialGradient>
+</defs>
+<!-- Diadema / Headband -->
+<path d="M70 40C85 24 125 28 150 55C168 75 174 105 168 128" stroke="url(#bandGrad)" stroke-linecap="round" stroke-width="16"></path>
+<path d="M72 41C86 26 123 30 148 56" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"></path>
+<!-- Conector y bisagra -->
+<rect fill="#2c2d36" height="24" rx="4" transform="rotate(25 150 85)" width="14" x="150" y="85"></rect>
+<!-- Almohadilla / Ear cup exterior grande -->
+<ellipse cx="145" cy="120" fill="url(#cupGlow)" rx="38" ry="46" stroke="#2b2d38" stroke-width="1.5" transform="rotate(18 145 120)"></ellipse>
+<!-- Borde biselado rosado / iluminación tenue -->
+<ellipse cx="145" cy="120" fill="url(#ringLight)" rx="36" ry="44" transform="rotate(18 145 120)"></ellipse>
+<!-- Plato exterior / Acabado mate -->
+<circle cx="144" cy="121" fill="#181920" r="25" stroke="#252631" stroke-width="2"></circle>
+<circle cx="144" cy="121" fill="#13141a" r="23"></circle>
+</svg>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: PodcastsSection -->
+<section class="mt-6" data-purpose="recommended-podcasts">
+<!-- Encabezado de la lista -->
+<div class="mb-3.5">
+<h2 class="text-xl font-bold tracking-tight text-white">Podcasts recomendados</h2>
+<p class="text-[13px] text-brand-subtext font-normal mt-0.5">Escucha, aprende, crece.</p>
+</div>
+<!-- Tarjetas verticales de podcast -->
+<div class="flex flex-col gap-3">
+<!-- Card 1: Dosis de entrenamiento -->
+<article class="bg-brand-card hover:bg-[#1a1c25] transition-colors p-3.5 rounded-2xl flex items-center gap-3.5 border border-brand-border/60" data-purpose="podcast-card">
+<!-- Portada ilustrada del episodio -->
+<div class="relative w-[76px] h-[76px] rounded-xl overflow-hidden shrink-0 bg-gradient-to-br from-[#3b3542] via-[#211f26] to-[#141418] flex flex-col justify-between p-1.5 border border-white/5">
+<span class="text-[8px] font-semibold text-white/70 uppercase leading-none">Dosis de</span>
+<div class="my-auto flex justify-center py-1">
+<!-- Icono representativo entrenamiento / mancuerna -->
+<svg class="w-8 h-4 text-white/50" fill="currentColor" viewBox="0 0 24 24">
+<path d="M6 5v14h2V5H6zm10 0v14h2V5h-2zM2 8v8h2V8H2zm18 0v8h2V8h-2zM8 11h8v2H8v-2z"></path>
+</svg>
+</div>
+<span class="text-[7.5px] font-extrabold tracking-wider text-white uppercase text-center leading-none">ENTRENAMIENTO</span>
+</div>
+<!-- Detalles del episodio -->
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-semibold text-white truncate">Dosis de entrenamiento</h3>
+<p class="text-[11.5px] text-brand-subtext line-clamp-1 mt-0.5 leading-snug">
+                Rutinas, hábitos y consejos para una mejor versión de ti.
+              </p>
+<!-- Controles: Duración & Audio bars -->
+<div class="flex items-center justify-between mt-2.5">
+<div class="flex items-center gap-2">
+<button aria-label="Reproducir episodio" class="w-6 h-6 rounded-full bg-brand-pink flex items-center justify-center text-brand-bg active:scale-95 transition-transform">
+<svg class="w-2.5 h-2.5 fill-current ml-0.5" viewBox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+</button>
+<span class="text-xs font-medium text-brand-subtext">15 min</span>
+</div>
+<!-- Ecualizador sutil a la derecha -->
+<div class="flex items-end gap-[2px] h-3.5 pr-1 opacity-60">
+<div class="w-[2px] h-2 bg-white/70 rounded-full"></div>
+<div class="w-[2px] h-3.5 bg-white rounded-full"></div>
+<div class="w-[2px] h-1.5 bg-white/50 rounded-full"></div>
+<div class="w-[2px] h-3 bg-white/80 rounded-full"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Dosis motivacional -->
+<article class="bg-brand-card hover:bg-[#1a1c25] transition-colors p-3.5 rounded-2xl flex items-center gap-3.5 border border-brand-border/60" data-purpose="podcast-card">
+<!-- Portada ilustrada del episodio -->
+<div class="relative w-[76px] h-[76px] rounded-xl overflow-hidden shrink-0 bg-gradient-to-t from-[#8d5663] via-[#482c3c] to-[#1f1922] flex flex-col justify-between p-1.5 border border-white/5">
+<span class="text-[8px] font-semibold text-white/80 uppercase leading-none">Dosis de</span>
+<!-- Ilustración de montaña / sol naciente -->
+<div class="flex justify-center items-center my-auto">
+<div class="w-2.5 h-2.5 rounded-full bg-[#f4a5b8] mb-[-4px] shadow-[0_0_8px_#f4a5b8]"></div>
+</div>
+<span class="text-[7.5px] font-extrabold tracking-wider text-white uppercase text-center leading-none">MOTIVACIONAL</span>
+</div>
+<!-- Detalles del episodio -->
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-semibold text-white truncate">Dosis motivacional</h3>
+<p class="text-[11.5px] text-brand-subtext line-clamp-1 mt-0.5 leading-snug">
+                Historias, reflexiones y tips para mantenerte enfocado.
+              </p>
+<!-- Controles: Duración & Audio bars -->
+<div class="flex items-center justify-between mt-2.5">
+<div class="flex items-center gap-2">
+<button aria-label="Reproducir episodio" class="w-6 h-6 rounded-full bg-brand-pink flex items-center justify-center text-brand-bg active:scale-95 transition-transform">
+<svg class="w-2.5 h-2.5 fill-current ml-0.5" viewBox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+</button>
+<span class="text-xs font-medium text-brand-subtext">12 min</span>
+</div>
+<!-- Ecualizador sutil -->
+<div class="flex items-end gap-[2px] h-3.5 pr-1 opacity-60">
+<div class="w-[2px] h-3 bg-white/80 rounded-full"></div>
+<div class="w-[2px] h-1.5 bg-white/50 rounded-full"></div>
+<div class="w-[2px] h-3.5 bg-white rounded-full"></div>
+<div class="w-[2px] h-2 bg-white/70 rounded-full"></div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Manifestación -->
+<article class="bg-brand-card hover:bg-[#1a1c25] transition-colors p-3.5 rounded-2xl flex items-center gap-3.5 border border-brand-border/60" data-purpose="podcast-card">
+<!-- Portada ilustrada del episodio -->
+<div class="relative w-[76px] h-[76px] rounded-xl overflow-hidden shrink-0 bg-gradient-to-tr from-[#2a2d34] via-[#473e4b] to-[#7f6373] flex flex-col justify-between p-1.5 border border-white/5">
+<div class="w-full"></div>
+<!-- Ilustración sutil orgánica de hoja -->
+<div class="my-auto flex justify-center">
+<svg class="w-6 h-6 text-[#f2a7b8]/60" fill="currentColor" viewBox="0 0 24 24">
+<path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path>
+</svg>
+</div>
+<span class="text-[7.5px] font-extrabold tracking-wider text-white uppercase text-center leading-none">MANIFESTACIÓN</span>
+</div>
+<!-- Detalles del episodio -->
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-semibold text-white truncate">Manifestación</h3>
+<p class="text-[11.5px] text-brand-subtext line-clamp-1 mt-0.5 leading-snug">
+                Visualiza, cree, logra. Herramientas para atraer lo que quieres.
+              </p>
+<!-- Controles: Duración & Audio bars -->
+<div class="flex items-center justify-between mt-2.5">
+<div class="flex items-center gap-2">
+<button aria-label="Reproducir episodio" class="w-6 h-6 rounded-full bg-brand-pink flex items-center justify-center text-brand-bg active:scale-95 transition-transform">
+<svg class="w-2.5 h-2.5 fill-current ml-0.5" viewBox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+</button>
+<span class="text-xs font-medium text-brand-subtext">14 min</span>
+</div>
+<!-- Ecualizador sutil -->
+<div class="flex items-end gap-[2px] h-3.5 pr-1 opacity-60">
+<div class="w-[2px] h-1.5 bg-white/50 rounded-full"></div>
+<div class="w-[2px] h-3 bg-white/80 rounded-full"></div>
+<div class="w-[2px] h-2 bg-white/70 rounded-full"></div>
+<div class="w-[2px] h-3.5 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- END: PodcastsSection -->
+</main>
+
+
+<!-- END: MainContentScrollableArea -->
+<!-- BEGIN: BottomNavigationBar -->
+<nav class="absolute bottom-0 inset-x-0 bg-[#0c0d11]/95 backdrop-blur-xl border-t border-[#191b24] pt-3 pb-6 px-6 z-40" data-purpose="bottom-tab-bar">
+<div class="flex justify-between items-center max-w-sm mx-auto">
+<!-- Tab 1: Inicio (Activo) -->
+<a class="flex flex-col items-center gap-1 text-brand-pink group" href="#">
+<svg class="w-5 h-5 fill-current transition-transform group-hover:scale-105" viewBox="0 0 24 24">
+<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+</svg>
+<span class="text-[10px] font-medium tracking-wide">Inicio</span>
+</a>
+<!-- Tab 2: Música -->
+<a class="flex flex-col items-center gap-1 text-brand-muted hover:text-white transition-colors group" href="#">
+<svg class="w-5 h-5 stroke-[1.8] stroke-current fill-none transition-transform group-hover:scale-105" viewBox="0 0 24 24">
+<path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"></path>
+<circle cx="6" cy="18" r="3"></circle>
+<circle cx="18" cy="16" r="3"></circle>
+</svg>
+<span class="text-[10px] font-medium tracking-wide">Música</span>
+</a>
+<!-- Tab 3: Podcasts -->
+<a class="flex flex-col items-center gap-1 text-brand-muted hover:text-white transition-colors group" href="#">
+<svg class="w-5 h-5 stroke-[1.8] stroke-current fill-none transition-transform group-hover:scale-105" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="2"></circle>
+<path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14" stroke-linecap="round"></path>
+</svg>
+<span class="text-[10px] font-medium tracking-wide">Podcasts</span>
+</a>
+<!-- Tab 4: Mi cuenta -->
+<a class="flex flex-col items-center gap-1 text-brand-muted hover:text-white transition-colors group" href="#">
+<svg class="w-5 h-5 stroke-[1.8] stroke-current fill-none transition-transform group-hover:scale-105" viewBox="0 0 24 24">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="text-[10px] font-medium tracking-wide">Mi cuenta</span>
+</a>
+</div>
+<!-- Barra indicadora inferior iOS (Home Indicator Bar) -->
+<div class="mt-4 flex justify-center">
+<div class="w-32 h-1 bg-white/20 rounded-full"></div>
+</div>
+</nav>
+<!-- END: BottomNavigationBar -->
+
+</body></html>
